@@ -1,0 +1,12 @@
+AI declaration
+
+
+Use of Generative AI
+We used Claude (Anthropic) as a tutor while working on this deliverable. We asked it to guide us without giving complete solutions. We used it for:
+•	Setup and tools: creating a Frost client ID file and excluding it with .gitignore, collaborating on a shared GitHub repository, selecting a Python kernel and installing packages in VS Code.
+•	Understanding the Frost API: how to find endpoints and elements, how the JSON response is structured, and the difference between the sources, observations and availableTimeSeries endpoints.
+•	Debugging: explaining error messages (NameError, KeyError, 401 Unauthorized) and problems caused by cells being run out of order.
+•	Data issues: discovering that Frost returns two versions of daily values (PT0H/PT6H for mean and PT0H/PT18H for max temperature), and that the end date in referencetime is exclusive. The AI provided the code line for filtering on timeOffset and the fix for the date range.
+•	Code provided by the AI: a temporary cell to build df_temp for 2025 (adapted from our own Task 3 code), and line-by-line comments explaining our Task 3 and Task 4 code.
+•	Presentation: suggested talking points for the video.
+All analysis choices, results and interpretations were reviewed and decided by us, and we went through the code ourselves to make sure we understand it.
