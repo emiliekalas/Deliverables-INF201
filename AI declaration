@@ -29,3 +29,7 @@ meaning that the loop will break.. It also handles the case where the year ends 
 The station name is fetched from Frost, so the function works for any station and year. Frost gave two 
 versions of the daily max, PT0H and PT18H, but we used PT0H, the same as in the other tasks. We found one heatwave in Ås 
 in 2025, from 16 to 20 July. A limitation is that the function assumes there are no missing days in the data.
+
+https://nmbu.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=de08ff29-2176-492f-add5-b4e50066fb5d
+
+https://nmbu.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=12303ffd-cb80-44c1-8754-b4e500651bf5
