@@ -10,3 +10,22 @@ We used Claude (Anthropic) as a tutor while working on this deliverable. We aske
 •	Code provided by the AI: a temporary cell to build df_temp for 2025 (adapted from our own Task 3 code), and line-by-line comments explaining our Task 3 and Task 4 code.
 •	Presentation: suggested talking points for the video.
 All analysis choices, results and interpretations were reviewed and decided by us, and we went through the code ourselves to make sure we understand it.
+
+
+
+
+
+discussion
+
+
+3
+# Ås station has data all the way back to 1874, so data from 1925 was available. To be able to put them on top of each other we used day of the year on the x-axis.
+The mean for 2025 was 7.87 degrees versus 5,28 in 1925. The difference is largest in the autumn and early winter, where 1925 had several very cold periods (down to −20.7 °C). The summers were are quite similar. Years can vary a lot, its not smart to draw any conclusions from just there to years alone. A better comparison would be to use averages over a few years or decades
+
+4
+#We used the daily maximum temperature, since a temperature ≥ 27 °C is defined as a heatwave. 
+The function goes through the days in order and counts hot days in a row; a cooler day ends the streak, 
+meaning that the loop will break.. It also handles the case where the year ends during a heatwave. 
+The station name is fetched from Frost, so the function works for any station and year. Frost gave two 
+versions of the daily max, PT0H and PT18H, but we used PT0H, the same as in the other tasks. We found one heatwave in Ås 
+in 2025, from 16 to 20 July. A limitation is that the function assumes there are no missing days in the data.
